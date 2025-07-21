@@ -113,13 +113,6 @@ The system was iteratively improved in 3 stages:
 
 ---
 
-## 👨‍💻 Authors
-
-- Abdul Samad – [GitHub](https://github.com/ASamad73)
-- Haider Abbas Virk
-
----
-
 ## 📄 Reference
 
 The research work and detailed metrics are documented in our [📄 Research Paper](https://drive.google.com/file/d/1Wd3XG6fHDl-yBEn3aD0zdOTIIwyOs5mZ/view).
