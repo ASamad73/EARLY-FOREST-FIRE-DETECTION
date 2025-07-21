@@ -9,13 +9,12 @@ It is to note that each folder has its own seperate readme file as well that exp
 
 <h1 align="center">🔥 Early Forest Fire Detection 🔥</h1>
 <p align="center">
-  <b>YOLOv8 + CLIP based Early Wildfire Detection System</b><br>
+  <b>YOLOv8s + CLIP based Early Wildfire Detection System</b><br>
   <i>Multi-stage Deep Learning Pipeline to Enhance Detection in Forested Environments</i>
 </p>
 
 <p align="center">
-  <a href="https://github.com/ASamad73/Early-Forest-Fire-Detection">🔗 GitHub Repo</a> |
-  <a href="https://github.com/ASamad73/Early-Forest-Fire-Detection/blob/main/Early-Forest-Fire-Detection(DL%20Project).pdf">📄 Research Paper</a>
+  <a href="https://drive.google.com/file/d/1Wd3XG6fHDl-yBEn3aD0zdOTIIwyOs5mZ/view">📄 Research Paper</a>
 </p>
 
 ---
@@ -25,7 +24,7 @@ It is to note that each folder has its own seperate readme file as well that exp
 Early detection of forest fires is vital for minimizing environmental and economic damage. Traditional detection methods lack scalability and sensitivity, especially in challenging conditions. In this project, we explore a deep learning-based multi-stage pipeline using:
 
 - **CLIP (Contrastive Language-Image Pretraining)** for semantic classification
-- **YOLOv8** for object detection and localization
+- **YOLOv8s** for object detection and localization
 
 The system was iteratively improved in 3 stages:
 
@@ -94,16 +93,9 @@ The system was iteratively improved in 3 stages:
 |--------|--------|-------------|
 | Mendeley Fire | [Link](https://data.mendeley.com/datasets/gjmr63rz2r/1) | Unannotated baseline data |
 | Roboflow (Wildfire/Forest) | [Link](https://universe.roboflow.com/waleed-azzi-o5bzp/wildfire-detection-3vcvr) | Annotated fire/smoke dataset |
-| Alik & Kutay Datasets | [Link](https://www.kaggle.com/datasets/alik05/forest-fire-dataset) | Mixed fire and non-fire scenes |
+| Alik & Kutay Datasets | [Link](https://www.kaggle.com/datasets/alik05/forest-fire-dataset) | [Link](https://www.kaggle.com/datasets/kutaykutlu/forest-fire) | Mixed fire and non-fire scenes |
 | General Fire Dataset | [Link](https://universe.roboflow.com/situational-awarnessinnovsense/fire-detection-ypseh) | Used for additional diversity |
-
----
-
-## 📷 Visual Examples
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/your-image-link-here" alt="Prediction Example" width="600">
-</p>
+| General Fire Dataset | [Link](https://universe.roboflow.com/situational-awarnessinnovsense/fire-detection-ypseh) | Used for additional diversity |
 
 ---
 
@@ -121,7 +113,7 @@ The system was iteratively improved in 3 stages:
 
 - Detailed prompts significantly improve CLIP’s zero-shot accuracy
 - Sequential pipelines are effective but slow
-- Integrated models with weight tuning balance recall and precision
+- Integrated models with weight tuning, balance recall, and precision
 - Padding and prompt engineering enhance classification reliability
 
 ---
@@ -138,12 +130,6 @@ The system was iteratively improved in 3 stages:
 
 - Abdul Samad – [GitHub](https://github.com/ASamad73)
 - Haider Abbas Virk
-
----
-
-## 📄 Reference
-
-The research work and detailed metrics are documented in our [research paper](https://github.com/ASamad73/Early-Forest-Fire-Detection/blob/main/Early-Forest-Fire-Detection(DL%20Project).pdf).
 
 ---
 
