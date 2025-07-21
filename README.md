@@ -1,20 +1,7 @@
-Our project began with establishing a baseline using CLIP's zero-shot classification capabilities. We tested three prompt strategies of varying complexity across multiple datasets. Simple prompts achieved only 35% accuracy on augmented data and 23% on original images, demonstrating their ineffectiveness. More detailed prompts showed significant improvement, reaching 80-88% accuracy, confirming that richer contextual prompts yield better results. Interestingly, non-augmented data consistently outperformed augmented versions in our zero-shot inference tests, suggesting that augmentation techniques may introduce noise when used during inference rather than training.
-
-The first major improvement involved developing a two-stage pipeline combining YOLOv8 and CLIP. Initial tests revealed YOLOv8 performed better on general fire images compared to distant forest fire scenes, which presented greater detection challenges due to subtle visual cues. Following professor recommendations, we enhanced the system by integrating YOLOv8 and CLIP for joint inferences. This integrated approach showed notable performance improvements, particularly for the challenging forest fire dataset.
-
-For our second improvement, we implemented several advanced techniques across different implementations. The classifier version used YOLOv8 for localization and CLIP for verification, balanced through a logistic classifier with weights alpha=0.6 and beta=0.4. The padding variation retained more contextual information by applying 10% padding during classifier training. We also experimented with simplified prompts of the same categories but shorter length, and tested different weight configurations where CLIP's influence (beta) was increased relative to YOLO's (alpha). These refinements allowed us to optimize the balance between precise localization and semantic understanding for improved fire detection performance.
-
-It is to note that each folder has its own seperate readme file as well that explains that part.
-<hr/>
-
 <h1 align="center">🔥 Early Forest Fire Detection 🔥</h1>
 <p align="center">
   <b>YOLOv8s + CLIP based Early Wildfire Detection System</b><br>
   <i>Multi-stage Deep Learning Pipeline to Enhance Detection in Forested Environments</i>
-</p>
-
-<p align="center">
-  <a href="https://drive.google.com/file/d/1Wd3XG6fHDl-yBEn3aD0zdOTIIwyOs5mZ/view">📄 Research Paper</a>
 </p>
 
 ---
@@ -93,7 +80,7 @@ The system was iteratively improved in 3 stages:
 |--------|--------|-------------|
 | Mendeley Fire | [Link](https://data.mendeley.com/datasets/gjmr63rz2r/1) | Unannotated baseline data |
 | Roboflow (Wildfire/Forest) | [Link](https://universe.roboflow.com/waleed-azzi-o5bzp/wildfire-detection-3vcvr) | Annotated fire/smoke dataset |
-| Alik & Kutay Datasets | [Link](https://www.kaggle.com/datasets/alik05/forest-fire-dataset) | [Link](https://www.kaggle.com/datasets/kutaykutlu/forest-fire) | Mixed fire and non-fire scenes |
+| Alik & Kutay Datasets | [Link1](https://www.kaggle.com/datasets/alik05/forest-fire-dataset), [Link2](https://www.kaggle.com/datasets/kutaykutlu/forest-fire) | Mixed fire and non-fire scenes |
 | General Fire Dataset | [Link](https://universe.roboflow.com/situational-awarnessinnovsense/fire-detection-ypseh) | Used for additional diversity |
 | General Fire Dataset | [Link](https://universe.roboflow.com/situational-awarnessinnovsense/fire-detection-ypseh) | Used for additional diversity |
 
@@ -130,6 +117,12 @@ The system was iteratively improved in 3 stages:
 
 - Abdul Samad – [GitHub](https://github.com/ASamad73)
 - Haider Abbas Virk
+
+---
+
+## 📄 Reference
+
+The research work and detailed metrics are documented in our [📄 Research Paper](https://drive.google.com/file/d/1Wd3XG6fHDl-yBEn3aD0zdOTIIwyOs5mZ/view).
 
 ---
 
